@@ -5,7 +5,7 @@ A clean, lightweight, and fully responsive **BMI Calculator** built using plain 
 This project is designed to be easy to understand, customize, and reuse — even for beginners and non-technical users.
 
 ## 🔗 Live Demo
-https://your-username.github.io/simple-bmi-calculator
+https://yuvronixstudio.github.io/simple-bmi-calculator/
 
 ---
 
