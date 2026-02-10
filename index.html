@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BMI Calculator</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>BMI Calculator</h1>
+
+    <!-- Unit Selector -->
+    <label for="unit">Height Unit</label>
+    <select id="unit">
+      <option value="cm">Centimeters (cm)</option>
+      <option value="ft">Feet & Inches</option>
+    </select>
+
+    <!-- Height in CM -->
+    <div id="cmBox">
+      <label>Height (cm)</label>
+      <input type="number" id="heightCm" placeholder="e.g. 170" min="1" />
+    </div>
+
+    <!-- Height in FT/IN -->
+    <div id="ftBox" class="row hidden">
+      <div>
+        <label>Feet</label>
+        <input type="number" id="heightFt" placeholder="e.g. 5" min="0" />
+      </div>
+      <div>
+        <label>Inches</label>
+        <input type="number" id="heightIn" placeholder="e.g. 7" min="0" />
+      </div>
+    </div>
+
+    <!-- Weight -->
+    <label>Weight (kg)</label>
+    <input type="number" id="weight" placeholder="e.g. 65" min="1" />
+
+    <!-- Result -->
+    <div class="result">
+      <div class="bmi-value" id="bmi">--</div>
+      <div class="bmi-status" id="status"></div>
+    </div>
+
+    <p class="note">BMI is a general health indicator, not a diagnosis.</p>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
